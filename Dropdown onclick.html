@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+</head>
+<body>
+    <h1>Courses</h1>
+   
+        <select id="course">
+            <option value="SE">Software Engineering</option>
+            <option value="MFAI">Mathematics</option>
+            <option value="COOS">Computer organization</option>
+            <option value="WT">Web technology</option>
+            <option value="TEC">Technical english and communication</option>
+            <option value="PP">Python programming</option>
+            <option value="DS">Data structures</option>
+
+             <button onclick="showCourse()">Submit</button>
+            
+             <script>
+                function showCourse(){
+                    let selected=document.getElementById("course").value;
+                    alert("Your selected course is:"+selected);
+                }
+
+             </script>
+        </select>
+</body>
+</html>
